@@ -8,6 +8,10 @@ public abstract class SpecialString implements TextFunkifier{
 	}
 	
 	public String toString() {
+		
+	
+		
+		
 		return s;
 	}
 }
