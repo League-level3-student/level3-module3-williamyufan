@@ -38,11 +38,13 @@ public class _00_TestSpecialString {
 	//   the JUnitTest case below to test your customized Special String.
 	@Test
 	public void testCustomString() {
-		SpecialString mcs = new ("This is also a test");
-		SpecialString q = new MixedCapsString("thIs Is");
-		SpecialString x = new MixedCapsString("ThIIs is Also");
+		SpecialString mcs = new LowerCaseString("This is also a test");
+		SpecialString q = new LowerCaseString("thIs Is");
+		SpecialString x = new LowerCaseString("ThIIs is Also");
 		System.out.println(mcs);
-		assertEquals("this is a test", mcs.toString());
+		System.out.println(q);
+		System.out.println(x);
+		assertEquals("this is also a test", mcs.toString());
 		assertEquals("this is", q.toString());
 		assertEquals("thiis is also", x.toString());
 	}
